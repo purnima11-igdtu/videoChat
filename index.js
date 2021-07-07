@@ -1,21 +1,19 @@
-
 const socket = require("socket.io");
-const express = require('express');
+const express = require("express");
 const app = express();
-const path = require('path');
+const path = require("path");
 const router = express.Router();
-app.use(express.static(path.join(__dirname, 'public')));
-app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, '/index.html'));
+app.use(express.static(path.join(__dirname, "public")));
+app.get("/", function (req, res) {
+  res.sendFile(path.join(__dirname, "/index.html"));
 });
 
-app.get('/video', function(req, res) {
-  res.sendFile(path.join(__dirname, '/public/index2.html'));
+app.get("/video", function (req, res) {
+  res.sendFile(path.join(__dirname, "/public/index2.html"));
 });
-
-let server = app.listen(4001, function () {
-  console.log("sever is running");
-  
+const port = process.env.PORT || 4001;
+let server = app.listen(port, () => {
+  console.log("starting server at ${port}");
 });
 //Upgrades the server to accept websockets.
 
@@ -26,16 +24,16 @@ let io = socket(server);
 io.on("connection", function (socket) {
   console.log("User Connected :" + socket.id);
 
-// // chat code 
-// io.on("connection", function (socket) {
-//   socket.on("sendingmessage", function (data) {
-//     io.emit("broadcast", data);
-//   });
+  // // chat code
+  // io.on("connection", function (socket) {
+  //   socket.on("sendingmessage", function (data) {
+  //     io.emit("broadcast", data);
+  //   });
 
-//   console.log("websocket connected", socket.id);
-// });
+  //   console.log("websocket connected", socket.id);
+  // });
 
-//chat code ends
+  //chat code ends
 
   //Triggered when a peer hits the join room button.
 
@@ -43,7 +41,6 @@ io.on("connection", function (socket) {
     console.log("hey");
     let rooms = io.sockets.adapter.rooms;
     let room = rooms.get(roomName);
-
 
     //room == undefined when no such room exists.
     if (room == undefined) {
@@ -91,4 +88,3 @@ io.on("connection", function (socket) {
     socket.broadcast.to(roomName).emit("leave");
   });
 });
-
