@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>teams</title>
+
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" />
+    <link
+      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/venobox/venobox.css"/>
+    <link href="assets/vendor/aos/aos.css"  />
+
+    <!-- Template Main CSS File -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/vc.css"  rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+
+    <!-- =======================================================
+  * Template Name: Regna - v2.2.1
+  * Template URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <script>
+    function start(){
+      window.location.replace('./video');
+    }
+  </script>
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header-transparent">
+      <div class="container">
+        <div id="logo" class="pull-left">
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a> -->
+          <h1>VIDEO CALL</h1>
+          <!-- Uncomment below if you prefer to use a text logo -->
+          <!--<h1><a href="#hero">Regna</a></h1>-->
+        </div>
+
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="menu-active"><a href="index.html">Home</a></li>
+            <li><a href="#about">join</a></li>
+            <li><a href="#services">Services</a></li>
+            <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+            <li><a href="#team">Team</a></li>
+            <!-- <li class="menu-has-children">
+              <a href="">Drop Down</a>
+              <ul> -->
+              <!-- <li><a href="#">Drop Down 1</a></li>
+                <li class="menu-has-children">
+                  <a href="#">Drop Down 2</a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+                <li><a href="#">Drop Down 5</a></li>
+              </ul>
+            </li> -->
+            </li>
+
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+        <!-- #nav-menu-container -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+        <h1>Welcome to Teams Video Call</h1>
+        <h2>Now use Microsoft Teams with family and friends to call, chat, and make plans.
+
+        </h2>
+        <a href="#about" class="btn-get-started">Get Started</a>
+      </div>
+
+      <!-- <div id="video-chat-lobby">
+      <h2 class="text">PLEASE ENTER YOUR PASSCODE</h2>
+      <input id="roomName" type="text" placeholder="Passcode" />
+      <button id="join">JOIN</button>
+    </div>
+    <div id="video-chat-room">
+      <video id="user-video" muted="muted"></video>
+      <video id="peer-video"></video>
+    </div>
+    <div class="btn-group" id="btn-group" style="display: none">
+      <button id="mute">MUTE</button>
+      <button id="leave">LEAVE ROOM</button>
+      <button id="hide">HIDE CAMERA</button>
+    </div> -->
+    </section>
+    <!-- End Hero Section -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about">
+        <div class="container" data-aos="fade-up">
+          <div class="row about-container">
+            <div class="col-md-4">
+              <!-- <div class="col-lg-6 content order-lg-1 order-2"> -->
+              <h2 class="title">JOIN</h2>
+
+
+              <!-- <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="fa fa-photo"></i></div>
+              <h4 class="title"><a href="">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="fa fa-bar-chart"></i></div>
+              <h4 class="title"><a href="">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+ -->
+
+             <!--  <div
+                id="video-chat-lobby"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              > -->
+                <!-- <h2 class="text">To create meeting code click here</h2> -->
+              <!--   <input id="roomName" type="text" placeholder="Passcode" /> -->
+              <h2 class="text">To create meeting code click here</h2>
+                <button id="start"  onclick="start()">START</button>
+
+              </div>
+              <div class="col-md-8" data-aos="fade-left" data-aos-delay="100">
+                <!-- <div class="col-lg-6 background order-lg-2 order-1" data-aos="fade-left" data-aos-delay="100"> -->
+              <img src = "https://techcommunity.microsoft.com/t5/image/serverpage/image-id/43646i40A0059BAFE24F6C/image-size/large?v=v2&px=999" width="520" height ="333" float="right" >
+            </div>
+            </div>
+            
+          </div>
+  
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services">
+        <div class="container">
+          <div class="section-title">
+            <!-- <span>Services</span> -->
+            <h2>Services</h2>
+            <p>
+              Whether it’s chat, calls, or video, anyone can engage at any time, bringing everyone closer.
+
+Your docs, photos, videos, chat history, and meeting notes are always there, so it’s easier to work together.
+
+Set up your team’s space with all the apps you need so you can stay in just one place instead of jumping around.
+
+
+            </p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch"
+              data-aos="fade-up"
+            >
+              <!-- <div class="icon-box">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4><a href="">Lorem Ipsum</a></h4>
+                <p>
+                  Voluptatum deleniti atque corrupti quos dolores et quas
+                  molestias excepturi
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4><a href="">Sed ut perspiciatis</a></h4>
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-tachometer"></i></div>
+                <h4><a href="">Magni Dolores</a></h4>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="fade-up"
+              data-aos-delay="450"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-world"></i></div>
+                <h4><a href="">Nemo Enim</a></h4>
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-slideshow"></i></div>
+                <h4><a href="">Dele cardo</a></h4>
+                <p>
+                  Quis consequatur saepe eligendi voluptatem consequatur dolor
+                  consequuntur
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+              data-aos="fade-up"
+              data-aos-delay="750"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-arch"></i></div>
+                <h4><a href="">Divera don</a></h4>
+                <p>
+                  Modi nostrum vel laborum. Porro fugit error sit minus sapiente
+                  sit aspernatur
+                </p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- ======= Team Section ======= -->
+      <section id="team">
+        <div class="container" data-aos="fade-up">
+          <div class="section-header">
+            <h3 class="section-title">Team</h3>
+            <p class="section-description">
+             This project was made possible only with the help of amazing, humble and helpful mentors from microsoft.I am blessed and grateful for this amazing opportunity. 
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <div class="pic">
+                  <img src="https://media-exp1.licdn.com/dms/image/C5603AQEdB0XjtUj6Ag/profile-displayphoto-shrink_800_800/0/1596625582243?e=1631145600&v=beta&t=hDwbuQ8sW5TJjO7K1fQoniBEWO6Fy_y95wfxgQQvre4" alt="" />
+                </div>
+                <h4>Aditi Rao</h4>
+                <span>The cheerful reader</span>
+                <div class="social">
+                  <!-- <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a> -->
+                  <a href="https://www.linkedin.com/in/whoisaditi/"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member" data-aos="fade-up" data-aos-delay="200">
+                <div class="pic">
+                  <img src="https://microsoftapc.sharepoint.com/teams/EngageGroup2-PurnimaPal/Shared%20Documents/Purnima%20Pal/profileimage.jpg" alt="" />
+                </div>
+                <h4>Parag Bhand</h4>
+                <span>The motivator</span>
+                <div class="social">
+                  <!-- <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a> -->
+                  <a href="https://www.linkedin.com/in/parag-bhand-b32a711a/"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member" data-aos="fade-up" data-aos-delay="300">
+                <div class="pic">
+                  <img src="https://media-exp1.licdn.com/dms/image/C4E03AQH9MRFO75A6PQ/profile-displayphoto-shrink_800_800/0/1555353459914?e=1631145600&v=beta&t=2V0IBKTQ6NnbuNNmwe50JnnHZ7lz2xuk2o1DuXEZRdo" alt="" />
+                </div>
+                <h4>Pankhuri Nigam</h4>
+                <span>The supportive source</span>
+                <div class="social">
+                  <!-- <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a> -->
+                  <a href="https://www.linkedin.com/in/pankhuri-nigam-48605b122/"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member" data-aos="fade-up" data-aos-delay="400">
+                <div class="pic">
+                  <img src="https://media-exp1.licdn.com/dms/image/C5603AQFLJ04DBYYRNg/profile-displayphoto-shrink_200_200/0/1601805955006?e=1631145600&v=beta&t=y1C09Aq3Hdry5d32NbX4DGHNhrIfiVtkcZ5oimMHZUY" height="320" alt="" />
+                </div>
+                <h4>Purnima Pal</h4>
+                <span>The inquisitive mentee</span>
+                <div class="social">
+                  <!-- <a href=""><i class="fa fa-twitter"></i></a>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-google-plus"></i></a> -->
+                  <a href="https://www.linkedin.com/in/purnima-pal-47bb321a1/"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Team Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="section-title">Contact</h3>
+            <p class="section-description">
+              Need assistance with your Microsoft product? We'll get you the help you need.
+            </p>
+          </div>
+        </div>
+
+        <!-- Uncomment below if you wan to use dynamic maps -->
+        <!-- <iframe
+          src="https://www.google.com/maps/place/Microsoft+Building+3/@17.4176204,78.3506055,12z/data=!4m9!1m2!2m1!1smicrosoft+near+Hyderabad,+Telangana!3m5!1s0x3bcb9382e46a2895:0x63260495e876d79e!8m2!3d17.4292148!4d78.3411149!15sCiNtaWNyb3NvZnQgbmVhciBIeWRlcmFiYWQsIFRlbGFuZ2FuYSIDiAEBWiQiIm1pY3Jvc29mdCBuZWFyIGh5ZGVyYWJhZCB0ZWxhbmdhbmGSAQ9idXNpbmVzc19jZW50ZXKaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUkJkRGR0YW01M1JSQUI"
+          width="100%"
+          height="380"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen
+        ></iframe> -->
+
+        <div class="container mt-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-4">
+              <div class="info">
+                <div>
+                  <i class="fa fa-map-marker"></i>
+                  <p>4th Floor, Silver Oak, Manyata Embassy Business Park, Outer Ring Road, Nagawara, Hebbal,
+                    Bangalore – 560 045</p>
+                </div>
+
+                <div>
+                  <i class="fa fa-envelope"></i>
+                  <p>info@microsoft.com</p>
+                </div>
+
+                <div>
+                  <i class="fa fa-phone"></i>
+                  <p>+1 5589 55488 55s</p>
+                </div>
+              </div>
+
+              <div class="social-links">
+                <a href="https://twitter.com/Microsoft?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/MicrosoftIndia/?brand_redir=20528438720" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/microsoft/" class="instagram"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+                <!-- <a href="#" class="google-plus"
+                  ><i class="fa fa-google-plus"></i
+                ></a> -->
+                <a href="https://www.linkedin.com/company/microsoft/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-5 col-md-8">
+              <div class="form">
+                <form
+                  action="forms/contact.php"
+                  method="post"
+                  role="form"
+                  class="php-email-form"
+                >
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      data-rule="minlen:4"
+                      data-msg="Please enter at least 4 chars"
+                    />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      data-rule="email"
+                      data-msg="Please enter a valid email"
+                    />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="subject"
+                      id="subject"
+                      placeholder="Subject"
+                      data-rule="minlen:4"
+                      data-msg="Please enter at least 8 chars of subject"
+                    />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      rows="5"
+                      data-rule="required"
+                      data-msg="Please write something for us"
+                      placeholder="Message"
+                    ></textarea>
+                    <div class="validate"></div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Your message has been sent. Thank you!
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit">Send Message</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container"></div>
+      </div>
+
+      <div class="container">
+        <div class="credits">
+          <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
+      -->
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/superfish/superfish.min.js"></script>
+    <script src="assets/vendor/hoverIntent/hoverIntent.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+   <script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script>
+  <!-- <script src="assets/js/chat.js"></script> -->
+</html>
